@@ -31,9 +31,9 @@ const handleError = () => {
   console.log(value);
 
   if (isNaN(value) || value === "") {
-    error.style.display = "block";
-  } else {
     error.style.display = "none";
+  } else {
+    error.style.display = "block";
   }
 };
 
