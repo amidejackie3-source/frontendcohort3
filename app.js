@@ -4,7 +4,7 @@ const error = document.querySelector(".error");
 const fromScale = document.querySelector(".from-scale");
 const toScale = document.querySelector(".to-scale");
 
-let value = tempValue.value;
+// let value = tempValue.value;
 
 let fromUnit = fromScale.value;
 let toUnit = toScale.value;
@@ -27,13 +27,14 @@ console.log(symbol);
 
 const handleError = () => {
   console.log("clicked");
+  let value = tempValue.value;
 
   console.log(value);
 
   if (isNaN(value) || value === "") {
-    error.style.display = "none";
-  } else {
     error.style.display = "block";
+  } else {
+    error.style.display = "none";
   }
 };
 
