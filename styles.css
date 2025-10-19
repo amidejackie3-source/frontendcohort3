@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(to bottom right, #eff6ff, #e0e7ff);
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-container {
+  width: 500px;
+  background-color: #ffffff;
+  padding: 70px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+}
+
+.converter {
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.converter p {
+  font-family: "Zilla Slab", serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.temp-input {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 18px;
+  border: 2px solid #d1d5db;
+  border-radius: 10px;
+}
+
+.scale {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.scale select {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 2px solid #d1d5db;
+  border-radius: 10px;
+}
+
+.errorMsg {
+  background-color: rgb(250, 216, 216);
+  color: red;
+  padding: 12px 15px;
+  font-size: 16px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid red;
+}
+
+.convertBtn {
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 15px 0;
+}
+
+.convertBtn:hover {
+  background-color: #333333;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 15px;
+  padding-top: 25px;
+  border-top: 1px solid #d1d5db;
+}
+
+.conversion-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.conversion-cont p {
+  font-family: "Zilla Slab", serif;
+  color: #767b80;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.conversion-cont h3 {
+  width: 100%;
+  padding: 18px 0;
+  background-color: #e8ebf0;
+  font-size: 18px;
+  color: black;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid #d1d5db;
+}
+
+.equivalents-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.equivalents-cont h4 {
+  font-family: "Zilla Slab", serif;
+  color: #767b80;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.sub-cont {
+  font-family: "Zilla Slab", serif;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #eff1f5;
+  padding: 10px;
+  border-radius: 10px;
+}
